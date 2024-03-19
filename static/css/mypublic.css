@@ -1,0 +1,137 @@
+body.ifavorite{overflow: hidden;}
+    
+#myfavorite {
+    transition: all 0.3s;
+    display: none;
+  }
+#myfavorite.show .myfavorite-box {
+    background-color: var(--color-canvas-default);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    border-left: solid 1px var(--color-neutral-muted);
+    border-right: solid 1px var(--color-neutral-muted);
+  }
+
+  #myfavorite.show .myfavorite-tabs{
+    border-bottom: solid 1px var(--color-neutral-muted);
+  }
+  #myfavorite.show .myfavorite-tabstit{
+      margin-left: 20px;
+      float: left;
+      color: var(--color-fg-subtle);
+   }
+ #myfavorite.show .myfavorite-close{    position: absolute;
+    display: inline-block !important;
+    display: inline;
+    float: right;
+    top: 2px;
+    right: 5px;
+    padding: 5px;
+    color: #888;
+    font-family: "Microsoft YaHei UI Light", "Microsoft YaHei UI";
+    font-size: 22px;
+    border-radius: 24px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;}
+#myfavorite.show .myfavorite-close:hover{
+        color: #000;
+    }
+#myfavorite.show .myfavorite-tabstit{float: left;line-height: 46px;}
+#myfavorite.show .myfavorite-content{}
+.myfavorite-content li {
+    text-decoration: none;
+    list-style: none;
+}
+.g-iFavoritem{overflow: hidden;margin: 10px 20px;}
+.g-iFavoritem_icon{float: left;}
+.g-iFavoritem_icon p{margin: 0px;padding: 0px;}
+.g-iFavoritem_minfo{overflow: hidden;margin-left: 1px;padding-left: 10px;}
+.g-iFavoritem_minfo p{margin: 0px;padding: 0px;}
+.g-iFavoritem_minfo_tit{line-height: 20px;font-size: 15px;}
+.g-iFavoritem_minfo_type{line-height: 20px;font-size: 13px;color: #555;}
+.myfavoriteols{overflow: hidden;padding: 10px 20px;font-size: 13px;color: #555;}
+  #myfavorite.show {
+   /* background-color: var(--color-neutral-muted);*/
+    height: calc(100vh - var(--navbar-height));
+    right: 2px;
+    position: fixed;
+    top: 68px;
+    width: 280px;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #myprofile.show .myprofile-tabs{
+    border-bottom: solid 1px var(--color-neutral-muted);
+  }
+  #myprofile.show .myprofile-tabstit{
+      margin-left: 20px;
+      float: left;
+      color: var(--color-fg-subtle);
+   }
+  #myprofile.show .myprofile-tabstit{
+    float: left;line-height: 46px;
+  }
+  #myprofile.show .myagendatabs{
+   overflow: hidden;
+ }
+ #myprofile.show .myagendatabs_tit{ margin-left: 20px;
+    float: left;
+    color: var(--color-fg-subtle);}
+    #myprofile.show .myagendaitem{overflow: hidden;}
+  .myprofile-content li {
+    text-decoration: none;
+    list-style: none;
+   }
+  #myprofile{transition: all 0.3s;
+    display: none;}
+    #myprofile.show .myprofile-box {
+        background-color: var(--color-canvas-default);
+        box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 1024px;
+        width: 100%;
+        height: 100%;
+        border-left: solid 1px var(--color-neutral-muted);
+        border-right: solid 1px var(--color-neutral-muted);
+      }
+      #myprofile.show .myprofile-close{position: absolute;
+        display: inline-block !important;
+        display: inline;
+        float: right;
+        top: 2px;
+        right: 5px;
+        padding: 5px;
+        color: #888;
+        font-family: "Microsoft YaHei UI Light", "Microsoft YaHei UI";
+        font-size: 22px;
+        border-radius: 24px;
+        text-align: center;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;}
+   
+    #myprofile.show {
+        /* background-color: var(--color-neutral-muted);*/
+         height: 300px;
+         right: 2px;
+         position: fixed;
+         top: 68px;
+         width: 280px;
+         z-index: 200;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+       }
+       .myagendaerrnotion{margin: 20px 20px;font-size: 13px;color: #000;}
+      

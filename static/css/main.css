@@ -8,6 +8,16 @@ a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
 }
+a {
+    font-weight: 500;
+    color: var(--c-text-accent);
+    text-decoration: none;
+    overflow-wrap: break-word;
+}
+p, ul, ol {
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
 .i-headboo{
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 55%), url(/static/pictures/hku-fei_20240222.jpg);
     background-position:center;background-size:cover
@@ -18,14 +28,48 @@ a:-webkit-any-link {
 .i-header-pageinfo{float: left;margin-left: 40px;height: 80px;overflow: hidden;}
 .i-header-pageicon{float: left;}
 .i-header-pageinav{float: left;margin-left: 30px;}
-.ihi-pageinav-item{float: left;color: rgba(235,235,235,1);padding: 10px 20px ;}
+
 .ihi-searchso{float: left;
     background: #fff;border-radius: 6px;
     height: 46px;
     padding: .2rem 1rem 1rem .5rem;
     margin-left: 20px;margin-top: 4px;
     width: 450px;}
-.i-header-minav{float: right;}
+.i-header-minav{float: right;margin-right: 60px;}
+.ihi-pageinav-item{float: left;color: rgba(235,235,235,1);margin: 8px 0px ; 
+    align-items: center;}
+    .ihi-pageinav-item svg {
+        margin-left: 0.3rem;
+        font-size: 1rem;
+        line-height: 1.2;
+        /*position: absolute;*/
+        color: var(--primary-bcolor);
+      }
+.ihi-pageinav-item a{
+    text-decoration: none;
+    color: #fff; line-height: 1.2;
+    align-items: center;
+    display: flex; justify-content: space-between;
+}
+.ihi-pageinav-item:hover{background-color: rgba(235,235,235,0.2);border-radius: 30px;}
+.ihi-pageinav-item a > span{
+    font-size: 0.9rem;
+}
+.ihi-pageinav-item a, .ihi-pageinav-item a:visited {
+    color: var(--primary-bcolor);
+    line-height: 1.2;
+    gap: 0.3rem;
+}
+.ihi-pageinav-item a {
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 9999px;
+    transition: all 0.3s;
+    border: 0;
+}
+
 .i-header-pageinav  a {
     display: flex;
     justify-content: space-between;
@@ -34,6 +78,7 @@ a:-webkit-any-link {
 .i-header-pageinav a > span {
     font-size: 0.9rem;
   }
+ 
   .i-header-pageinav .searchbtn span:last-child {
     transition: all 0.3s;
     border: 1px solid var(--color-border-default);
@@ -184,22 +229,66 @@ padding: 64px 0 32px;}
     line-height: 16px;
     text-align: center;
     padding-top: 4px;}
-.i-higuide{overflow: hidden;border-top: 1px solid #dadcdf;}
+.i-higuide{overflow: hidden;border-top: 1px solid #dadcdf;background: #fafafa;}
 .i-higuidetabs{overflow: hidden;border-bottom: 1px solid #dadcdf;height: 56px;}
 .i-higuidetablitem{max-width: 1224px;}
 .i-higuidetablitem{box-sizing: border-box;
     width: 100%;
     margin: auto; padding: 0px 20px;}
     .i-higuidetablitem a{text-decoration: none;}
+    
 .i-higuidetablitem_li{float: left;font-size: 16px;line-height: 40px;height: 40px;padding: 8px 0px;}
+.i-higuidetablitem_li:hover{cursor: pointer;color: var(--primary-color);}
 .i-higuidetablitem_litastitle{font-weight: bold;margin-right: 20px;font-size: 20px;}
 .i-higuinavli{margin-right: 20px;}
-.i-higuidepaper{max-width: 1224px;}
+.i-higuidepaper{max-width: 1224px;background: #fafafa;}
 .i-higuidepaper{box-sizing: border-box;
     width: 100%;
     margin: auto; padding: 20px 20px;}
-
-
+.i-higuidelitem{overflow: hidden;}
+.i-higuitem_li{width: 280px;
+    height: 100px;
+    background: #fff;
+    border-radius: 8px;border: #f3f5f7 solid 1px;
+    float: left;overflow: hidden;
+    margin-bottom: 10px;}
+    .i-higuitem_li a{text-decoration: none;}
+    .i-higuitem_li:hover{box-shadow: inset 0 0.133333rem 0.4rem 0 rgba(0,0,0,.3);border:#0F769F solid 1px;}
+.i-higuidictlitem{overflow: hidden;}
+.i-higuidictlitem_li{  width: 280px;
+    height: 160px;
+    background: #fff;
+    border-radius: 8px;border: #f3f5f7 solid 1px;
+    float: left;overflow: hidden;
+    margin-bottom: 10px;}
+.i-higuidictlitem_li a{text-decoration: none;}
+.i-higuidictlitem_li:hover{box-shadow: inset 0 0.133333rem 0.4rem 0 rgba(0,0,0,.3);border:#0F769F solid 1px;}
+.i-gliflm{margin-right: 16px;margin-bottom: 16px;}
+.i-higuidictlitem_licon{ height: 34px;float: left;
+    padding-top: 2px;}
+    .i-higuidictlitem_licon_files{width: 34px;height: 34px;overflow: hidden;background-size: cover;margin: auto;}
+.i-higuidictlitem_lititle{overflow: hidden;height: 40px;margin: 8px;height: 3rem;align-items: center;display: flex;padding-left: 8px;
+    gap: 0.5rem;}
+.i-higuidictlitem_litname{color: #333;}
+.i-higuidictlitem_libadge{
+    overflow: hidden;background-color:rgba(255 255 255 / 0.3);
+    padding: 2px 16px;font-size: 14px;line-height: 20px;
+    color: #666;height: 40px;
+    margin-bottom: 10px;
+}
+.i-higuidictlitem_lilinke{overflow: hidden;}
+.i-higuidictlitem_lilintag{background: #f1f1f1;float: left;margin-left: 16px;margin-top: 10px;color: #ff7b72;
+    border-radius: 3px;
+    padding: 1px 3px 2px 3px;
+    font-size: 10px;
+    transition: all 0.3s;}
+.i-higuidictlitem_lilintattr{
+    float: right;margin-right: 16px;margin-top: 10px;color: #817f7f;
+    border-radius: 3px;
+    padding: 1px 3px 2px 3px;
+    font-size: 10px;
+    transition: all 0.3s;
+}
     body.search {
         overflow: hidden;
       }
@@ -400,6 +489,19 @@ padding: 64px 0 32px;}
 .i-footimelutreelitem li{line-height: 36px;color: #777; word-break: break-all;list-style-type: none;}
 .i-footimelutreelitem li a{text-decoration: none;color:var(--primary-color)}
 :root{
+    --c-text-accent: var(--c-brand);
+    --c-brand: #3eaf7c;
+    --c-border:#dadcdf;
+--sidebar-width: 20rem;
+--content-width:960px;
+--navbar-height: 3.6rem;
+--vt-c-bg-mute:#f1f1f1;
+--vt-c-text-code:#476582;
+--vt-doc-code-font-size: 16px;
+--vt-doc-code-line-height: 1.5;
+--vt-c-indigo: #213547;
+--vt-c-divider-light:rgba(60, 60, 60, .12);
+
     --color-prettylights-syntax-comment: #b1bac3;
     --color-prettylights-syntax-constant: #0550ae;
     --color-prettylights-syntax-entity: #8250df;
@@ -445,6 +547,7 @@ padding: 64px 0 32px;}
     --color-danger-fg: #cf222e;
     --box-shadow: 109 109 109;
     --primary-color: #228e6c;
+    --primary-bcolor:var(--color-canvas-subtle);
     
 }
 [data-color-mode*='light'],
